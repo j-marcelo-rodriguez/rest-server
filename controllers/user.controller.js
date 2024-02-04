@@ -3,9 +3,10 @@ import { response, request } from "express";
 const usersGet = ( req = request, res = response ) => {
 
     const params = req.params;
-    
+
     res.json({
-        msg: 'Get API - CONTROLLER'
+        msg: 'Get API - CONTROLLER',
+        params
     });
 
 }
